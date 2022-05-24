@@ -8,7 +8,8 @@ body {
 .aaa {
   width: 500px;
   margin: 0 auto;
-  display: block;
+  display: flex;
+  flex-flow: column;
   text-align: right;
 }
 
@@ -74,8 +75,7 @@ button:hover {
 }
 
 /* Heading */
-h3,
-label[for="new-task"] {
+h3 {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -100,16 +100,6 @@ input[type="text"] {
 
 input[type="text"]:focus {
   color: #333;
-}
-
-/* New Task */
-label[for="new-task"] {
-  display: block;
-  margin: 0 0 20px;
-}
-
-input#new-task {
-  width: 318px;
 }
 
 /* Task list */
@@ -170,3 +160,19 @@ ul li.editMode input[type="text"] {
 ul li.editMode label {
   display: none;
 }
+
+/* New Task */
+.add-item {
+  margin-top: 1rem;
+}
+
+li.newMode {
+  border-bottom: 0;
+}
+
+input#new-task {
+  display: inline-block;
+  flex-grow: 1;
+  width: 318px;
+}
+
