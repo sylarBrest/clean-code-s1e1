@@ -1,53 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-  <title>Todo App</title>
-  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" media="screen">
+    <title>Todo App</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" media="screen">
   </head>
-  <body>
+  <body class="page">
     <header class="header">
       <img class="header__image" src="./eisenhower-matrix.jpg" alt="Eisenhower matrix">
       <a class="header__link" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
     </header>
     <main class="main">
-      <div class="add main__add">
+      <section class="add main__add">
         <h3 class="caption add__caption">Add Item</h3>
         <ul class="list add__list">
           <li class="item list__item list__item_new">
-            <input class="item__text item__text_add" type="text">
+            <input class="item__input item__text item__text_add" type="text">
             <button class="item__button item__button_add">Add</button>
           </li>
         </ul>
-      </div>
-      <div class="todo main__todo">
+      </section>
+      <section class="todo main__todo">
         <h3 class="caption todo__caption">Todo</h3>
         <ul class="list todo__list">
           <li class="item list__item">
-            <input class="item__checkbox" type="checkbox">
-            <label class="item__label">Pay Bills</label><input class="item__text item__text_display_none" type="text">
+            <input class="item__input item__checkbox" type="checkbox">
+            <label class="item__label">Pay Bills</label><input class="item__input item__text item__text_display_none" type="text">
             <button class="item__button item__button_edit">Edit</button>
-            <button class="item__button item__button_delete"><img src="./remove.svg" alt="remove"></button>
+            <button class="button-delete item__button item__button_delete"><img class="button-delete__image" src="./remove.svg" alt="remove"></button>
           </li>
           <li class="item list__item list__item_edit">
-            <input class="item__checkbox" type="checkbox">
-            <label class="item__label">Go Shopping</label><input class="item__text" type="text" value="Go Shopping">
+            <input class="item__input item__checkbox" type="checkbox">
+            <label class="item__label item__label_edit">Go Shopping</label><input class="item__input item__text item__text_edit" type="text" value="Go Shopping">
             <button class="item__button item__button_edit">Save</button>
-            <button class="item__button item__button_delete"><img src="./remove.svg" alt="remove"></button>
+            <button class="button-delete item__button item__button_delete"><img class="button-delete__image" src="./remove.svg" alt="remove"></button>
           </li>
         </ul>
-      </div>
-      <div class="completed main__completed">
+      </section>
+      <section class="completed main__completed">
         <h3 class="caption completed__caption">Completed</h3>
         <ul class="list completed__list">
           <li class="item list__item">
-            <input class="item__checkbox checkbox_checked" type="checkbox" checked>
-            <label class="item__label">See the Doctor</label><input class="item__text item__text_display_none" type="text">
+            <input class="item__input item__checkbox checkbox_checked" type="checkbox" checked>
+            <label class="item__label item__label_line_through">See the Doctor</label><input class="item__input item__text item__text_display_none" type="text">
             <button class="item__button item__button_edit">Edit</button>
-            <button class="item__button item__button_delete"><img src="./remove.svg" alt="remove"></button>
+            <button class="button-delete item__button item__button_delete"><img class="button-delete__image" src="./remove.svg" alt="remove"></button>
           </li>
         </ul>
-      </div>
+      </section>
     </main>
     <script src="app.js"></script>
   </body>
